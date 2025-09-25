@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/adminStyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Side</title>
+  <link rel="stylesheet" href="../css/adminStyle.css">
 </head>
 <body>
-    
+
+  <header>
+    <h1>Admin Side</h1>
+  </header>
+
+  <main class="container">
+    <!-- Linkerzijde: klas & studentenlijst -->
+    <section class="class-section">
+      <h2>Kies klas</h2>
+      <select id="classDropdown">
+        <option value="6adb">6 ADB</option>
+        <option value="5adb">5 ADB</option>
+        <option value="4adb">4 ADB</option>
+      </select>
+
+      <h3>Studentenlijst</h3>
+      <ul id="studentList">
+        <li class="student">Student 1</li>
+        <li class="student">Student 2</li>
+        <li class="student">Student 3</li>
+      </ul>
+    </section>
+
+    <!-- Rechterzijde: huidige student + controls -->
+    <section class="control-section">
+      <h2>Huidige student</h2>
+      <div id="currentStudent">Geen geselecteerd</div>
+
+      <div class="counter-controls">
+        <button id="minusBtn">-</button>
+        <span id="counter">0</span>
+        <button id="plusBtn">+</button>
+      </div>
+
+      <div class="minpunten">
+        <h3>Minpunten</h3>
+        <p id="minpuntCounter">0</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Extra scherm voor reden opgeven (popup/modal) -->
+  <div id="reasonModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Reden opgeven</h2>
+      <textarea id="reasonInput" placeholder="Geef een reden..."></textarea>
+      <button id="confirmBtn">Bevestigen</button>
+    </div>
+  </div>
+
 </body>
 </html>

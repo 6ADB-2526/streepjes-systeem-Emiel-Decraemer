@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/llnStyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Side</title>
+  <link rel="stylesheet" href="../css/llnStyle.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Student Side</h1>
+  </header>
+
+  <main class="container">
+    <!-- Current student -->
+    <section class="current-account">
+      <h2>Huidig account</h2>
+      <div id="currentStudent">Student Naam</div>
+    </section>
+
+    <!-- Streepjes counter -->
+    <section class="streepjes">
+      <h2>Streepjes</h2>
+      <div id="streepjesContainer">
+        <span class="streepje">|</span>
+        <span class="streepje">|</span>
+        <span class="streepje">|</span>
+      </div>
+    </section>
+
+    <!-- Minpunten counter -->
+    <section class="minpunten">
+      <h2>Minpunten</h2>
+      <p id="minpuntenCounter">0</p>
+    </section>
+  </main>
+
+  <script src="../js/llnWeb.js"></script>
 </body>
 </html>

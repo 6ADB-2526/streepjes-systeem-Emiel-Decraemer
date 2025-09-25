@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/mainweb.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../css/mainweb.css">
 </head>
-<header class="header">
-    
-</header>
 <body class="body">
-    <div class="container">
-        <div class="login infotype">
-            <input type="text">
-            <h3>login</h3>
-        </div>
-        <div class="password infotype">
-            <input type="text">
-            <h3>passwoord</h3>
-        </div>
-        <div class="role infotype">
-            <select name="student/leerkracht" id="S-Ldrop">
-                <option value="admin">leerkracht</option>
-                <option value="student">student</option>
-            </select>
-            <h3>student of leerkracht</h3>
-        </div>
-            <div class="button">
-                <p>login</p>
-            </div>
-    </div>
+  <header class="header">
+    <h1>Welcome Back</h1>
+  </header>
+
+  <main class="container">
+    <form class="login-form">
+      <div class="form-group">
+        <label for="username">Login</label>
+        <input type="text" id="username" placeholder="Enter your username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+
+      <div class="form-group">
+        <label for="role">Role</label>
+        <select id="role" name="role">
+          <option value="teacher">Leerkracht</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </main>
+
+  <script src="../js/mainWeb.js"></script>
+
 </body>
 </html>
+
+<!-- ai: basiscode zelf geschreven en gevraagd aan chatgpt om de code te verbeteren  -->
